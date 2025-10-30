@@ -1,65 +1,49 @@
-# simple-timer README
+# Simple Timer for Visual Studio Code ⏱️
 
-This is the README for your extension "simple-timer". After writing up a brief description, we recommend including the following sections.
+Минималистичный плагин для Visual Studio Code, который запускает таймер на 30 минут с уведомлениями каждые 10 минут.
 
-## Features
+## Возможности
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Запуск таймера на 30 минут командой из палитры команд VS Code
+- Уведомления каждые 10 минут о времени, оставшемся до конца
+- Уведомление о завершении таймера
 
-For example if there is an image subfolder under your extension project workspace:
+## Установка и запуск
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Клонируйте репозиторий:
+   ```bash
+   git clone git@github.com:vic505023/simple-timer.git
+   cd simple-timer
+   ```
+2. Откройте проект в VS Code:
+   ```bash
+   code .
+   ```
+3. Запустите плагин в режиме отладки:
+   - Нажмите F5
+   - Откроется новое окно VS Code с вашим плагином
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+4. В новом окне откройте палитру команд
+5. Введите и выберите команду `⏱️ Start 1-Minute Timer`
 
-## Requirements
+## Использование
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Таймер запустится на 30 минут. Каждые 10 минут появится уведомление с текущим временем, оставшимся до конца, и после окончания — уведомление о завершении.
 
-## Extension Settings
+## Структура проекта
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+- `extension.js` — основной файл с логикой таймера (около 40 строк)
+- `package.json` — описание команды плагина и его метаданные
+- `README.md` — этот файл с инструкциями
 
-For example:
+## Вклад
 
-This extension contributes the following settings:
+Плагины и улучшения приветствуются! Создайте issue или pull request.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Лицензия
 
-## Known Issues
+MIT — см. файл LICENSE для деталей.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+***
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Если нужно, могу адаптировать этот README под ваши нужды более подробно.
